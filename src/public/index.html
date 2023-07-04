@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- fuente increible-->
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- my css customisado-->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-lig bg-warning">
+        <a class="navbar-brand mx-auto" href="/">Chat</a>
+    </nav>
+
+    <!-- container que almacena toda la estructura del chat-->
+    <!-- carta para login-->
+    <div class="card col-md-4 mt-5 mx-auto" id = "nickWrap">
+        <div class="card-header ">
+            <h3>Ingresa tu Nombre:</h3>
+        </div>
+        <p id="nickError"></p>
+        <div class="card-body">
+            <form id="nickForm">
+                <input type="text" id="nickname" class="form-control">
+                <button type="submit" class="btn btn-warning btn-block mt-2">
+                    enviar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!--Carta oara contener el chat-->
+    <div class="container" id="ContenedorApp">
+        <!-- columnas-->
+        <div class="row mt-2">
+            <div class="col-md-6 offset-mt1">
+                <div class="card">
+                    <!-- titulo de la targeta-->
+                    <div class="card-header">
+                       <g4>Chateamos</g4>
+                 </div>
+
+                 <!-- cuerpo del chat donde se escribiran todos los mensajes obtenidos de la base de datos-->
+                 <div id="chat" class="card-body"></div>
+                    
+                 <!-- formulario , encargado de enviar mensajes  -->
+                    <form id="message-form" class="card-footer">
+                        <div class="input-group">
+                            <input type="text" id="message" class="form-control">
+                            <!-- boton de enviar-->
+                            <div class="imput-group-append">
+                                <button type="submit" class="btn btn-warning">
+                                  Enviar mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-header">
+                        <h3>usuarios</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="usernames"></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+    <!-- biblioteca para enviar la informavion jQuerry-->
+    <script
+			  src="https://code.jquery.com/jquery-3.6.1.min.js"
+			  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			  crossorigin="anonymous"></script>
+               
+    <script src="/socket.io/socket.io.js"charset="utf-8"></script>
+    <script src="/js/main.js" charset="utf-8"></script>
+</body>
+</html>
