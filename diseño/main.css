@@ -1,0 +1,40 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.logo{
+    padding: 10px;
+    width: auto;
+    background: black;
+}
+.menu-inicio{
+    padding: center;
+    background: red;
+}
+.title{
+    padding: 10px;
+    background: red;
+}
+.form{
+    padding: 10px;
+    background: hsla(145, 40%, 45%, 0.548);
+}
+
+input, button{
+    width: 100%;
+    margin-bottom: 3px;
+}
+label{
+    font-weight: bold;
+}
+button{
+    background-color: #c7382d ;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+#list > div{
+    background: lime;
+    padding:  3px;
+    margin-top: 10px;
+}
