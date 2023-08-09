@@ -1,0 +1,41 @@
+:root{
+    --colorTextos:var(#fff)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    font-family: 'Times New Roman',Times,serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+form {  
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10pc rgba(71, 3, 6, 0.7);
+}
+
+
+header{
+    padding: 10px;
+    border: 10px;
+    background: rgb(250, 212, 212);
+}
+.imagen{
+    background: red;
+}
+.menu-inicio{
+    padding: 10px;
+    background: red;
+}
