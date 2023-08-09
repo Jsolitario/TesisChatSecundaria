@@ -3,32 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Escuela secundaria Iron </title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../diseño/inicio.css">
+        <title>Escuela secundaria Iron </title>
     </head>
 
     <body>
+        <h1>bienbenido</h1>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
 
-        <header class="header">
-            Inicio de pagina
-        </header>
-        <nav class="nav">
-            narra de navegador
-        </nav>
-        
-        <div class="menu-inicio" >
-            <form>
-                <img src="../diseño/ironblood-logo.png" width="100" alt="" style="border-radius: 30px;">
-                
-            </form>
-            <form aling ="left">
-                <label for="titulo" > Bienbenido a escuela Iron</label>
-            </form>
-        </div>
+            socket.on('connect', function() {
+                console.log('conectado al servidor');
+            });
 
-        
-        <script src="" async defer></script>
+        </script>
+
+        <!-- script src="/socket.io/socket.io.js"charset="utf-8"></script>-->
     </body>
 </html>
