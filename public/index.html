@@ -4,12 +4,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="diseño/login.css">
         <title>Escuela secundaria Iron </title>
     </head>
 
     <body>
         <h1>bienbenido</h1>
+        <a href="html/inicio.html">sigueinte</button>
         <script src="/socket.io/socket.io.js"></script>
+        <script src="js/"
         <script>
             var socket = io();
 
@@ -17,8 +20,12 @@
                 console.log('conectado al servidor');
             });
 
-        </script>
+            socket.on('disconnect', function() {
+                console.log('perdimos conexion con el servidor');
+            });
 
-        <!-- script src="/socket.io/socket.io.js"charset="utf-8"></script>-->
+        </script>
+        <script src="js/main.js" charset="utf-8"></script>
+        
     </body>
 </html>
